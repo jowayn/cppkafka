@@ -5,7 +5,7 @@
 #include <chrono>
 #include <iterator>
 #include <condition_variable>
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 #include "cppkafka/consumer.h"
 #include "cppkafka/producer.h"
 #include "cppkafka/utils/consumer_dispatcher.h"

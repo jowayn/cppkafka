@@ -1,6 +1,6 @@
 #include <chrono>
 #define CATCH_CONFIG_RUNNER
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 
 using std::string;
 using std::chrono::steady_clock;
@@ -66,9 +66,9 @@ int main(int argc, char* argv[]) {
     if (returnCode != 0) {
         return returnCode;
     }
-    if (session.configData().reporterNames.empty()) {
+    if (session.configData().reporterName.empty()) {
         // Set our reporter as the default one
-        session.configData().reporterNames.emplace_back("instant");
+        //session.configData().reporterName.emplace_back("instant");
     }
 
     int numFailed = session.run();

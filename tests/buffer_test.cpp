@@ -2,7 +2,7 @@
 #include <vector>
 #include <array>
 #include <sstream>
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 #include "cppkafka/buffer.h"
 
 using std::string;

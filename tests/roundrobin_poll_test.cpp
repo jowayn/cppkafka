@@ -5,7 +5,7 @@
 #include <chrono>
 #include <iterator>
 #include <condition_variable>
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 #include <memory>
 #include <stdexcept>
 #include "cppkafka/cppkafka.h"

@@ -4,7 +4,7 @@
 #include <set>
 #include <map>
 #include <condition_variable>
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 #include "cppkafka/utils/buffered_producer.h"
 #include "cppkafka/consumer.h"
 #include "cppkafka/utils/compacted_topic_processor.h"

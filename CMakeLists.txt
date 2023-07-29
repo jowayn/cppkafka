@@ -22,6 +22,8 @@ if (NOT CMAKE_CXX_FLAGS)
         # Don't always use Wall, since VC's /Wall is ridiculously verbose.
         set(CMAKE_CXX_FLAGS "/W3")
 
+        set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
         # Disable VC secure checks, since these are not really issues
         add_definitions("-D_CRT_SECURE_NO_WARNINGS=1")
         add_definitions("-D_SCL_SECURE_NO_WARNINGS=1")
@@ -140,6 +142,8 @@ endif()
 
 add_subdirectory(src)
 add_subdirectory(include/cppkafka)
+
+#include_directories("/usr/local/include/catch2/")
 
 # Examples target
 if (NOT CPPKAFKA_DISABLE_EXAMPLES AND Boost_PROGRAM_OPTIONS_FOUND)

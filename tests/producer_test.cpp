@@ -3,7 +3,7 @@
 #include <chrono>
 #include <set>
 #include <condition_variable>
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 #include "cppkafka/producer.h"
 #include "cppkafka/consumer.h"
 #include "cppkafka/utils/buffered_producer.h"

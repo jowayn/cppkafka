@@ -1,5 +1,5 @@
 #include <sstream>
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 #include "cppkafka/topic_partition_list.h"
 #include "cppkafka/topic_partition.h"
 
